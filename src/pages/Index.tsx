@@ -7,15 +7,15 @@ const Index = () => {
   const [isPhoneDialogOpen, setIsPhoneDialogOpen] = useState(false);
 
   const products = [
-    { name: 'ТМГ-25 кВА', power: '25', price: '128 000 ₽' },
-    { name: 'ТМГ-40 кВА', power: '40', price: '145 000 ₽' },
-    { name: 'ТМГ-63 кВА', power: '63', price: '170 000 ₽' },
-    { name: 'ТМГ-100 кВА', power: '100', price: '210 000 ₽' },
-    { name: 'ТМГ-160 кВА', power: '160', price: '265 000 ₽' },
-    { name: 'ТМГ-250 кВА', power: '250', price: '340 000 ₽' },
-    { name: 'ТМГ-400 кВА', power: '400', price: '450 000 ₽' },
-    { name: 'ТМГ-630 кВА', power: '630', price: '615 000 ₽' },
-    { name: 'ТМГ-1000 кВА', power: '1000', price: '880 000 ₽' },
+    { name: 'ТМГ-25 кВА', power: '25', price: '128 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/8288c373-4714-43f1-88e4-f3fda30f630b.jpg' },
+    { name: 'ТМГ-40 кВА', power: '40', price: '145 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/b83e3b0c-2753-4096-87c5-966ec8005231.jpg' },
+    { name: 'ТМГ-63 кВА', power: '63', price: '170 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/bc355960-e014-401f-b994-b6cb5805f10f.jpg' },
+    { name: 'ТМГ-100 кВА', power: '100', price: '210 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/8288c373-4714-43f1-88e4-f3fda30f630b.jpg' },
+    { name: 'ТМГ-160 кВА', power: '160', price: '265 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/b83e3b0c-2753-4096-87c5-966ec8005231.jpg' },
+    { name: 'ТМГ-250 кВА', power: '250', price: '340 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/bc355960-e014-401f-b994-b6cb5805f10f.jpg' },
+    { name: 'ТМГ-400 кВА', power: '400', price: '450 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/8288c373-4714-43f1-88e4-f3fda30f630b.jpg' },
+    { name: 'ТМГ-630 кВА', power: '630', price: '615 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/b83e3b0c-2753-4096-87c5-966ec8005231.jpg' },
+    { name: 'ТМГ-1000 кВА', power: '1000', price: '880 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/bc355960-e014-401f-b994-b6cb5805f10f.jpg' },
   ];
 
   const advantages = [
@@ -146,9 +146,13 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {products.map((product, index) => (
               <div key={index} className="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:border-amber-200">
-                <div className="relative bg-gradient-to-br from-slate-100 via-slate-50 to-white h-56 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <Icon name="Zap" size={72} className="text-slate-300 group-hover:text-amber-500 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative bg-gradient-to-br from-slate-100 via-slate-50 to-white h-56 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-7">
                   <h3 className="font-bold text-2xl mb-3 text-slate-900">{product.name}</h3>
