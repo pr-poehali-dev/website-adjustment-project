@@ -214,19 +214,11 @@ const Index = () => {
             <div className="bg-[#1e3a8a] p-4 rounded-full">
               <Icon name="Phone" size={48} className="text-[#fbbf24]" />
             </div>
-            <div className="text-center space-y-4">
-              <div>
-                <p className="text-gray-600 mb-1">Отдел продаж:</p>
-                <a href="tel:+78123456789" className="text-2xl font-bold text-[#1e3a8a] hover:text-[#1e40af]">
-                  8 (812) 345-67-89
-                </a>
-              </div>
-              <div>
-                <p className="text-gray-600 mb-1">Технический отдел:</p>
-                <a href="tel:+78129876543" className="text-2xl font-bold text-[#1e3a8a] hover:text-[#1e40af]">
-                  8 (812) 987-65-43
-                </a>
-              </div>
+            <div className="text-center space-y-2">
+              <p className="text-gray-600 mb-2">Позвоните нам:</p>
+              <a href="tel:+79624424921" className="text-3xl font-bold text-[#1e3a8a] hover:text-[#1e40af] block">
+                8 962 442-49-21
+              </a>
             </div>
             <p className="text-sm text-gray-500 text-center">
               Мы работаем ПН-ПТ с 9:00 до 18:00
