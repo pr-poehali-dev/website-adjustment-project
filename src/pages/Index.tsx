@@ -217,9 +217,8 @@ const Index = () => {
                 <Icon name="MapPin" size={32} className="text-amber-400" />
               </div>
               <h3 className="font-semibold text-lg mb-3 text-slate-900">Головной офис</h3>
-              <p className="text-slate-600">г. Санкт-Петербург</p>
-              <p className="text-slate-600">ул. Строителей, д. 3</p>
-              <p className="text-slate-500 text-sm mt-3">ПН – ПТ, 9:00-18:00</p>
+              <p className="text-slate-600 text-lg">г. Санкт-Петербург</p>
+              <p className="text-slate-500 text-sm mt-4">ПН – ПТ, 9:00-18:00</p>
             </div>
             
             <div className="text-center p-8 rounded-xl bg-slate-50 border border-slate-200">
