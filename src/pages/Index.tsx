@@ -232,7 +232,7 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-lg mb-3 text-slate-900">Email</h3>
               <p className="text-slate-600 text-sm mb-2">Коммерческий отдел:</p>
-              <a href="mailto:sales@mercury-spb.ru" className="text-slate-900 hover:text-amber-600 transition-colors">sales@mercury-spb.ru</a>
+              <a href="mailto:zva7777@bk.ru" className="text-slate-900 hover:text-amber-600 transition-colors">zva7777@bk.ru</a>
             </div>
           </div>
         </div>
@@ -268,11 +268,19 @@ const Index = () => {
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-5 rounded-2xl">
               <Icon name="Phone" size={48} className="text-amber-400" />
             </div>
-            <div className="text-center space-y-2">
-              <p className="text-slate-600 mb-2">Позвоните нам:</p>
-              <a href="tel:+79624424921" className="text-4xl font-bold text-slate-900 hover:text-amber-600 block transition-colors">
-                8 962 442-49-21
-              </a>
+            <div className="text-center space-y-4">
+              <div>
+                <p className="text-slate-600 mb-2 text-sm">Отдел продаж:</p>
+                <a href="tel:+79624424921" className="text-3xl font-bold text-slate-900 hover:text-amber-600 block transition-colors">
+                  8 962 442-49-21
+                </a>
+              </div>
+              <div>
+                <p className="text-slate-600 mb-2 text-sm">Технический отдел:</p>
+                <a href="tel:+79588581999" className="text-3xl font-bold text-slate-900 hover:text-amber-600 block transition-colors">
+                  8 958 858-19-99
+                </a>
+              </div>
             </div>
             <p className="text-sm text-slate-500 text-center">
               Мы работаем ПН-ПТ с 9:00 до 18:00
