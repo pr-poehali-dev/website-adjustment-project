@@ -204,7 +204,56 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-white">
+      <section className="py-24 px-6 bg-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600"></div>
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-12 md:p-16 relative overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+            
+            <div className="relative z-10 text-center">
+              <div className="inline-block mb-8">
+                <div className="flex items-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3 rounded-full">
+                  <Icon name="Award" size={24} className="text-slate-900" />
+                  <span className="text-slate-900 font-bold text-sm uppercase tracking-wider">Официальный партнёр</span>
+                </div>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Официальный дилер<br />
+                <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                  Уральского трансформаторного завода
+                </span>
+              </h2>
+
+              <p className="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                Прямые поставки трансформаторного оборудования от одного из крупнейших производителей России. Гарантия качества, полный пакет документов и сертификатов.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <Icon name="FileCheck" size={40} className="text-amber-400 mx-auto mb-4" />
+                  <h3 className="text-white font-semibold text-lg mb-2">Сертификаты качества</h3>
+                  <p className="text-slate-400 text-sm">Вся продукция сертифицирована</p>
+                </div>
+
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <Icon name="ShieldCheck" size={40} className="text-amber-400 mx-auto mb-4" />
+                  <h3 className="text-white font-semibold text-lg mb-2">Заводская гарантия</h3>
+                  <p className="text-slate-400 text-sm">До 5 лет на всё оборудование</p>
+                </div>
+
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <Icon name="TrendingDown" size={40} className="text-amber-400 mx-auto mb-4" />
+                  <h3 className="text-white font-semibold text-lg mb-2">Лучшие цены</h3>
+                  <p className="text-slate-400 text-sm">Работаем напрямую с заводом</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-slate-900">Контакты</h2>
