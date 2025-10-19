@@ -76,8 +76,9 @@ const Index = () => {
             </div>
             <span className="text-2xl font-bold tracking-tight">МЕРКУРИЙ</span>
           </div>
-          <div className="flex flex-col items-end text-sm">
+          <div className="flex flex-col items-end text-sm gap-1">
             <a href="tel:+79624424921" className="hover:text-amber-400 transition-colors font-medium">8 962 442-49-21</a>
+            <a href="tel:+79588581999" className="hover:text-amber-400 transition-colors font-medium">8 958 858-19-99</a>
             <span className="text-xs text-slate-400 mt-1">ПН-ПТ, 9:00-18:00</span>
           </div>
         </div>
@@ -171,7 +172,11 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {productCategories.map((category, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 hover:border-amber-400 transition-all duration-300 cursor-pointer">
+              <div 
+                key={index} 
+                onClick={() => setIsPhoneDialogOpen(true)}
+                className="bg-white p-6 rounded-lg border border-slate-200 hover:border-amber-400 transition-all duration-300 cursor-pointer"
+              >
                 <h4 className="font-semibold text-lg text-slate-900 mb-2">{category.name}</h4>
                 <p className="text-slate-600 text-sm">{category.description}</p>
               </div>
