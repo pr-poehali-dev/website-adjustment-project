@@ -22,7 +22,7 @@ const Index = () => {
     {
       icon: 'Package',
       title: 'Собственные склады',
-      description: 'Все складские помещения в Санкт-Петербурге и области принадлежат нам'
+      description: 'Оборудование всегда в наличии на складах в Санкт-Петербурге и области'
     },
     {
       icon: 'Truck',
@@ -89,14 +89,14 @@ const Index = () => {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-block mb-6">
             <span className="bg-amber-500/10 text-amber-400 px-4 py-2 rounded-full text-sm font-medium border border-amber-500/20">
-              Промышленное оборудование премиум-класса
+              Промышленное оборудование
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Трансформаторы для<br />крупного бизнеса
           </h1>
           <p className="text-xl mb-10 text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Поставка силового электрооборудования с гарантией до 5 лет. Индивидуальные решения для промышленных объектов.
+            Поставка силового электрооборудования с гарантией 5 лет. Индивидуальные решения для промышленных объектов.
           </p>
           <Button 
             onClick={() => setIsPhoneDialogOpen(true)}
