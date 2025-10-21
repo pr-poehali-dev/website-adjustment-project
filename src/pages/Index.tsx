@@ -106,7 +106,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {advantages.map((advantage, index) => (
+            {advantages.slice(0, 3).map((advantage, index) => (
               <div key={index} className="group bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-200 transition-all duration-300">
                 <div className="flex flex-col items-start gap-5">
                   <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-4 rounded-xl group-hover:from-amber-500 group-hover:to-amber-600 transition-all duration-300">
@@ -119,6 +119,20 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+          
+          <div className="flex justify-center mt-8">
+            <div className="group bg-white p-8 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-200 transition-all duration-300 max-w-md w-full">
+              <div className="flex flex-col items-start gap-5">
+                <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-4 rounded-xl group-hover:from-amber-500 group-hover:to-amber-600 transition-all duration-300">
+                  <Icon name={advantages[3].icon} size={28} className="text-amber-400 group-hover:text-slate-900" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-xl mb-3 text-slate-900">{advantages[3].title}</h3>
+                  <p className="text-slate-600 text-base leading-relaxed">{advantages[3].description}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
