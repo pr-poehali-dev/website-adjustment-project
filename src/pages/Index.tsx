@@ -19,11 +19,7 @@ const Index = () => {
   ];
 
   const advantages = [
-    {
-      icon: 'Package',
-      title: 'Собственные склады',
-      description: 'Оборудование всегда в наличии на складах в Санкт-Петербурге и области'
-    },
+
     {
       icon: 'Truck',
       title: 'Прямые поставки',
@@ -243,7 +239,7 @@ const Index = () => {
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                   <Icon name="ShieldCheck" size={40} className="text-amber-400 mx-auto mb-4" />
                   <h3 className="text-white font-semibold text-lg mb-2">Заводская гарантия</h3>
-                  <p className="text-slate-400 text-sm">До 5 лет на всё оборудование</p>
+                  <p className="text-slate-400 text-sm">5 лет на всё оборудование</p>
                 </div>
 
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
