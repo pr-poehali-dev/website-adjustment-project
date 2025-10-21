@@ -83,7 +83,7 @@ const Index = () => {
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Трансформаторы для<br />крупного бизнеса
+            Трансформаторы
           </h1>
           <p className="text-xl mb-10 text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Поставка силового электрооборудования с гарантией 5 лет. Индивидуальные решения для промышленных объектов.
