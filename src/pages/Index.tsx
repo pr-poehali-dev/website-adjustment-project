@@ -7,15 +7,15 @@ const Index = () => {
   const [isPhoneDialogOpen, setIsPhoneDialogOpen] = useState(false);
 
   const products = [
-    { name: 'ТМГ-25 кВА', power: '25', price: '128 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/5bc63192-7b57-41f6-b54e-6e5862379b5b.jpg' },
-    { name: 'ТМГ-40 кВА', power: '40', price: '145 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/be2d956a-3b04-4139-9b47-6ea214782d82.jpg' },
-    { name: 'ТМГ-63 кВА', power: '63', price: '170 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/3f0c2559-b132-4020-bd5c-a7872219bc13.jpg' },
-    { name: 'ТМГ-100 кВА', power: '100', price: '210 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/f62b1909-b7b2-4bcc-9ce4-0ba04424f82d.jpg' },
-    { name: 'ТМГ-160 кВА', power: '160', price: '265 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/65b257b9-4a91-4021-8ae7-ead9cf7afcb9.jpg' },
-    { name: 'ТМГ-250 кВА', power: '250', price: '340 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/0d174088-2121-4d54-ad01-c515358db8a0.jpg' },
-    { name: 'ТМГ-400 кВА', power: '400', price: '450 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/f6525fd4-aa2f-44a0-82bf-378ccf928696.jpg' },
-    { name: 'ТМГ-630 кВА', power: '630', price: '615 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/e81ee21f-6e73-4af0-9466-73b351084e16.jpg' },
-    { name: 'ТМГ-1000 кВА', power: '1000', price: '880 000 ₽', image: 'https://cdn.poehali.dev/projects/20f0b944-044a-4871-88d2-cd254bed5c00/files/9527ca0b-185c-4f77-a224-cfec153d07a0.jpg' },
+    { name: 'ТМГ-25 кВА', power: '25', price: '128 000 ₽', image: 'https://cdn.poehali.dev/files/d625ba6f-b5b3-431a-a90f-f752760f1632.png' },
+    { name: 'ТМГ-40 кВА', power: '40', price: '145 000 ₽', image: 'https://cdn.poehali.dev/files/e0e17caf-2a3f-4edb-8302-fd505c018fe5.png' },
+    { name: 'ТМГ-63 кВА', power: '63', price: '170 000 ₽', image: 'https://cdn.poehali.dev/files/ffbd82b8-bb84-40da-92eb-aaece0201f31.png' },
+    { name: 'ТМГ-100 кВА', power: '100', price: '210 000 ₽', image: 'https://cdn.poehali.dev/files/01946686-091e-4763-8526-dfb7e1376c94.png' },
+    { name: 'ТМГ-160 кВА', power: '160', price: '265 000 ₽', image: 'https://cdn.poehali.dev/files/1ac93723-16e4-4e90-b4ef-7592ed68c418.png' },
+    { name: 'ТМГ-250 кВА', power: '250', price: '340 000 ₽', image: 'https://cdn.poehali.dev/files/2da7f4ff-6d30-4e68-91c4-19c542893afd.png' },
+    { name: 'ТМГ-400 кВА', power: '400', price: '450 000 ₽', image: 'https://cdn.poehali.dev/files/acc1f3ce-7f83-45ad-b6ba-112b1b1fa6fe.png' },
+    { name: 'ТМГ-630 кВА', power: '630', price: '615 000 ₽', image: 'https://cdn.poehali.dev/files/ccc354ac-616a-43fe-8c56-950d1cfc50f4.png' },
+    { name: 'ТМГ-1000 кВА', power: '1000', price: '880 000 ₽', image: 'https://cdn.poehali.dev/files/a5f0c5fb-5509-460b-84c3-3b77fbb1c9d9.png' },
   ];
 
   const advantages = [
