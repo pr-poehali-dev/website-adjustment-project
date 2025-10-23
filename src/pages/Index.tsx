@@ -5,6 +5,7 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [isPhoneDialogOpen, setIsPhoneDialogOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const products = [
     { name: 'ТМГ-25 кВА', power: '25', price: '128 000 ₽', image: 'https://cdn.poehali.dev/files/d625ba6f-b5b3-431a-a90f-f752760f1632.png' },
@@ -150,12 +151,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {products.map((product, index) => (
               <div key={index} className="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 hover:border-amber-200">
-                <div className="relative bg-gradient-to-br from-slate-100 via-slate-50 to-white h-56 overflow-hidden">
+                <div 
+                  className="relative bg-gradient-to-br from-slate-100 via-slate-50 to-white h-56 overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage(product.image)}
+                >
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-7">
@@ -346,6 +350,20 @@ const Index = () => {
             <p className="text-sm text-slate-500 text-center">
               Мы работаем ПН-ПТ с 9:00 до 18:00
             </p>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl p-2">
+          <div className="relative w-full h-[80vh] bg-slate-50 rounded-lg overflow-hidden flex items-center justify-center">
+            {selectedImage && (
+              <img 
+                src={selectedImage} 
+                alt="Увеличенное фото"
+                className="max-w-full max-h-full object-contain"
+              />
+            )}
           </div>
         </DialogContent>
       </Dialog>
